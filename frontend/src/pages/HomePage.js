@@ -1,28 +1,34 @@
 import React from 'react';
+import IconChat from '../assets/img/icon-chat.png';
+import IconMoney from '../assets/img/icon-money.png';
+import IconSecurity from '../assets/img/icon-security.png';
 
 const HomePage = () => {
   return (
     <div className="homepage">
-      <section className="hero">
-        <div className="hero-content">
-          <h1>No fees. No minimum deposit. High interest rates.</h1>
-          <p>Open a savings account with Argent Bank today!</p>
-        </div>
-      </section>
+      <div className="hero">
+        <section className="hero-content">
+          <h2 className="sr-only">Promoted Content</h2>
+          <p className="subtitle">No fees.</p>
+          <p className="subtitle">No minimum deposit.</p>
+          <p className="subtitle">High interest rates.</p>
+          <p className="text">Open a savings account with Argent Bank today!</p>
+        </section>
+      </div>
       <section className="features">
         <div className="feature-item">
-          <div className="icon">💬</div>
-          <h3>You are our #1 priority</h3>
+          <img src={IconChat} alt="Chat Icon" className="feature-icon" />
+          <h3 className="feature-item-title">You are our #1 priority</h3>
           <p>Need to talk to a representative? You can get in touch through our 24/7 chat or through a phone call in less than 5 minutes.</p>
         </div>
         <div className="feature-item">
-          <div className="icon">💰</div>
-          <h3>More savings means higher rates</h3>
+          <img src={IconMoney} alt="Money Icon" className="feature-icon" />
+          <h3 className="feature-item-title">More savings means higher rates</h3>
           <p>The more you save with us, the higher your interest rate will be!</p>
         </div>
         <div className="feature-item">
-          <div className="icon">🔒</div>
-          <h3>Security you can trust</h3>
+          <img src={IconSecurity} alt="Security Icon" className="feature-icon" />
+          <h3 className="feature-item-title">Security you can trust</h3>
           <p>We use top of the line encryption to make sure your data and money is always safe.</p>
         </div>
       </section>

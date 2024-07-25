@@ -13,29 +13,47 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5em;
-  color: #2c3e50;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.main-nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-nav li {
-  margin-left: 20px;
+.main-nav-logo {
+  display: flex;
+  align-items: center;
 }
 
-nav a {
+.main-nav-logo-image {
+  max-width: 100%;
+  width: 200px;
+}
+
+.main-nav-right {
+  margin-left: auto;
+}
+
+.main-nav-item {
   text-decoration: none;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
   color: #2c3e50;
+}
+
+.main-nav-item:hover {
+  text-decoration: underline;
+}
+
+.fa-icon {
+  margin-right: 8px; 
 }
 
 .hero {
-  background: url('../src/assets/img/bank-tree.jpeg') no-repeat center center/cover;
+  background: url('../src/assets/img/bank-tree.jpeg') no-repeat center center;
+  background-size: cover;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -50,12 +68,32 @@ nav a {
   padding: 20px;
 }
 
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #00bc77;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
 .feature-item {
   max-width: 300px;
   text-align: center;
 }
 
-.icon {
-  font-size: 3em;
-  margin-bottom: 10px;
+.feature-item-title {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 1.25rem;
 }

@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/img/argentBankLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
     <header>
-      <div className="logo">ARGENTBANK</div>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/signin">Sign In</Link></li>
-        </ul>
+      <nav className="main-nav">
+        <Link className="main-nav-logo" to="/">
+          <img className="main-nav-logo-image" src={logo} alt="Argent Bank Logo" />
+        </Link>
+        <div className="main-nav-right">
+          <Link className="main-nav-item" to="/signin">
+            <FontAwesomeIcon icon={faCircleUser} className="fa-icon" />
+            Sign In
+          </Link>
+        </div>
       </nav>
     </header>
   );
