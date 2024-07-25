@@ -12,7 +12,7 @@ const Header = () => {
           <img className="main-nav-logo-image" src={logo} alt="Argent Bank Logo" />
         </Link>
         <div className="main-nav-right">
-          <Link className="main-nav-item" to="/signin">
+          <Link className="main-nav-item" to="/login">
             <FontAwesomeIcon icon={faCircleUser} className="fa-icon" />
             Sign In
           </Link>
