@@ -4,6 +4,7 @@ import Header from './components/Header/Header.js';
 import LoginPage from './pages/LoginPage.js';
 import Footer from './components/Footer/Footer.js';
 import HomePage from './pages/HomePage.js';
+import UserPage from './pages/UserPage.js';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage/>} />
+          <Route path="/user" element={<UserPage />} />
         </Routes>
         <Footer />
       </div>

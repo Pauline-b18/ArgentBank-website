@@ -16,6 +16,9 @@ const Header = () => {
             <FontAwesomeIcon icon={faCircleUser} className="fa-icon" />
             Sign In
           </Link>
+          <Link className="main-nav-item" to="/user">
+            Test Userpage
+          </Link>
         </div>
       </nav>
     </header>
